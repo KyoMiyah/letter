@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>To Nacchan</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nacchan</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="card">
-        <h1>なっちゃんへ</h1>
 
-        <img src="photo.jpg" alt="写真">
+<div class="container">
 
-        <p>
-            いつもありがとう。<br>
-            一緒に過ごした時間を大切に思っています。<br>
-            これからもよろしくお願いします。
-        </p>
+    <div class="envelope" onclick="openLetter()">
 
-        <p class="sign">
-            くまさんより
-        </p>
+        <div class="flap"></div>
+
+        <div class="letter" id="letter">
+
+            <img src="photo.jpg" alt="写真">
+
+            <h1>なっちゃんへ</h1>
+
+            <p>
+                いつもありがとう。<br><br>
+
+                一緒に過ごした時間を大切に思っています。<br>
+
+                これからもよろしくお願いします。
+            </p>
+
+            <p class="sign">
+                くまさんより
+            </p>
+
+        </div>
+
     </div>
+
+    <p class="hint">封筒をクリックしてください</p>
+
+</div>
+
+<script>
+function openLetter() {
+    document.querySelector(".envelope").classList.toggle("open");
+}
+</script>
+
 </body>
 </html>
