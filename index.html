@@ -3,49 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Nacchan</title>
+<title>なっちゃんへ</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<div class="letter">
 
-    <div class="envelope" onclick="openLetter()">
+    <h1>なっちゃんへ</h1>
 
-        <div class="flap"></div>
+    <img src="photo.jpg" alt="写真">
 
-        <div class="letter" id="letter">
+    <div class="message">
 
-            <img src="photo.jpg" alt="写真">
+        <p>
+            いつもありがとう。<br><br>
 
-            <h1>なっちゃんへ</h1>
+            一緒に過ごした時間を大切に思っています。<br>
 
-            <p>
-                いつもありがとう。<br><br>
+            これからもよろしくお願いします。
+        </p>
 
-                一緒に過ごした時間を大切に思っています。<br>
-
-                これからもよろしくお願いします。
-            </p>
-
-            <p class="sign">
-                くまさんより
-            </p>
-
-        </div>
+        <p class="sign">
+            くまさんより
+        </p>
 
     </div>
 
-    <p class="hint">封筒をクリックしてください</p>
-
 </div>
-
-<script>
-function openLetter() {
-    document.querySelector(".envelope").classList.toggle("open");
-}
-</script>
 
 </body>
 </html>

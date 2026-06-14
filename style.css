@@ -1,83 +1,75 @@
 body{
     margin:0;
-    background:#fff4f7;
-    font-family:sans-serif;
+    min-height:100vh;
 
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-}
 
-.container{
-    text-align:center;
-}
-
-.envelope{
-    position:relative;
-    width:350px;
-    height:220px;
-    background:#f3d5b5;
-    cursor:pointer;
-    margin:auto;
-}
-
-.flap{
-    position:absolute;
-    width:0;
-    height:0;
-
-    border-left:175px solid transparent;
-    border-right:175px solid transparent;
-    border-top:110px solid #e9c46a;
-
-    transform-origin:top;
-    transition:0.8s;
-    z-index:3;
+    background:#fff8f5;
+    font-family:sans-serif;
 }
 
 .letter{
-    position:absolute;
+    width:800px;
+    max-width:90%;
 
-    left:25px;
-    top:20px;
-
-    width:300px;
     background:white;
 
-    padding:20px;
-    box-sizing:border-box;
+    padding:50px;
 
-    transform:translateY(120px);
-    transition:1s;
+    border-radius:15px;
 
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    position:relative;
+    overflow:hidden;
+}
+
+.letter::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:url("tulip.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:70%;
+
+    opacity:0.12;
+
+    z-index:0;
+}
+
+.letter *{
+    position:relative;
     z-index:1;
-
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
-}
-
-.envelope.open .flap{
-    transform:rotateX(180deg);
-}
-
-.envelope.open .letter{
-    transform:translateY(-180px);
-}
-
-img{
-    width:100%;
-    border-radius:8px;
 }
 
 h1{
+    text-align:center;
     color:#d63384;
 }
 
-.sign{
-    margin-top:30px;
-    font-weight:bold;
+img{
+    display:block;
+    margin:auto;
+
+    width:350px;
+    max-width:100%;
+
+    border-radius:10px;
 }
 
-.hint{
+.message{
     margin-top:30px;
+    line-height:2;
+    font-size:18px;
+}
+
+.sign{
+    text-align:right;
+    margin-top:40px;
+    font-weight:bold;
 }
