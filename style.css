@@ -1,0 +1,25 @@
+body {
+    background: #fff5f8;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #e75480;
+}
+
+.sign {
+    margin-top: 40px;
+    font-weight: bold;
+}
